@@ -9,8 +9,8 @@
 		<title>Personal Website</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/style.scss">
+		<link rel="stylesheet" href="assets/css/main.css">		
+		<script src = "email-sender/server.js"> </script>
 	</head>
 	<body class="is-preload">
 
@@ -27,7 +27,8 @@
 						<li><a href="#one" class="active">About Me</a></li>
 						<li><a href="#two">Skills</a></li>
 						<li><a href="#three">Projects</a></li>
-						<li><a href="#four">Contact</a></li>
+						<li><a href="#four">Experience</a></li>
+						<li><a href="#five">Contact</a></li>
 					</ul>
 				</nav>
 				<footer>
@@ -49,7 +50,7 @@
 						<!-- One -->
 							<section id="one">
 								<div class="image main" data-position="center">
-									<img src="images/banner.jpg" alt="" />
+									<img src="https://images.unsplash.com/photo-1518085250887-2f903c200fee?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
 								</div>
 								<div class="container">
 									<header class="major">
@@ -57,6 +58,7 @@
 										<h3>Programmer. LeetCode Addict. Peniaphobic.</h3>
 									</header>
 									<p>I am a rising junior at Arizona State University, majoring in computer science. I am enhancing my skills in programming, data structures, and algorithms, and currently working on AI/ML projects.</p>
+
 								</div>
 							</section>
 
@@ -64,9 +66,9 @@
 						<!-- script use for symbols of programming languages -->
 						<script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
 						<section id="two">
+							
 							<div class="container">
-								<p>Languages I have mastered so far...</p>
-					
+								<h3>Skills</h3>
 								<ul class="language-list">
 									<li class="language-item">
 										<span class="iconify" data-icon="logos:python" data-inline="false" style="color: #306998;"></span> 
@@ -151,33 +153,93 @@
 							<!DOCTYPE html>
 
 
-<section>
-	
+<section class="timeline" id = "four">
+				<!-- timeline -->
+				
+				
+					<div class="container">
+					  <!--     ITEM 1  -->
+					  <h3>Experience</h3>
+					  <div class="timeline-item">
+						<div class="timeline-img"></div>
+				  
+						<div class="timeline-content js--fadeInLeft">
+						  <h4>Technology Consultant</h4>
+						  <h5>Arizona State University</h5>
+						  <h8><i>May 2024 - Present</i></h8><br><br>
+						  <p>Managed and maintained classroom technology systems, ensuring seamless operation of computers, Zoom PCs, AMX panels, projectors, and document cameras during lectures and presentations. Conducted training sessions for professors and staff to enhance their use of classroom technologies, and developed user-friendly documentation and guides. Monitored and analyzed the performance of these technologies, implementing improvements and preventative measures to avoid potential issues.</p>
+						</div>
+					  </div> 
+				  
+					  <!--     ITEM 2  -->
+					   <div class="timeline-item">
+						<div class="timeline-img"></div>
+						<div class="timeline-content js--fadeInRight">
+						<h4>Software Engineer Fellow</h4>
+						<h5>Headstarters AI</h5>
+						<h8><i>July 2024 - Present</i></h8><br><br>
+						  <p>LI will build five AI projects using various technologies such as React.js, OpenAI API, Next.js, HTML/CSS, Stripe API, AWS, RAG, vectors, and Firebase. These projects will be developed in a group of three people, leveraging our combined skills to create innovative solutions. Each project will focus on different aspects of AI, from integrating payment systems with Stripe API to deploying scalable applications on AWS. We aim to explore the practical applications of AI, enhance our technical expertise, and deliver impactful projects that demonstrate the power of modern technologies.</p>
+						</div>
+					  </div>   
+				  
+					      <!-- ITEM 1 -->
+					  <!-- <div class="timeline-item">
+						<div class="timeline-img"></div>
+				  
+						<div class="timeline-content js--fadeInLeft">
+						  <h2>Major Achievements</h2>
+						  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+						</div>
+					  </div> 
+				  
+					  <!--     ITEM 2  -->
+					   <!-- <div class="timeline-item">
+						<div class="timeline-img"></div>
+						<div class="timeline-content js--fadeInRight">
+						  <h2>Recent Milestones</h2>
+						  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+						</div>
+					  </div>    -->
+
+						
+				  
+				  
+				  
+					</div>
+				
 </section>
 
 
 
 						<!-- Four -->
-							<section id="four">
-								<div class="container">
-									<h3>Contact Me</h3>
-									<form method="post" action="#">
-										<div class="row gtr-uniform">
-											<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-											<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-											<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
-											<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
-											<div class="col-12">
-												<ul class="actions">
-													<li><input type="submit" class="primary" value="Send Message" /></li>
-													<li><input type="reset" value="Reset Form" /></li>
-												</ul>
-											</div>
-										</div>
-									</form>
+						<section id="five">
+							<div class="container">
+							  <h3>Contact Me</h3>
+							  <form id="contactForm" method="post" action="#">
+								<div class="row gtr-uniform">
+								  <div class="col-6 col-12-xsmall">
+									<input type="text" name="name" id="name" placeholder="Name" required />
+								  </div>
+								  <div class="col-6 col-12-xsmall">
+									<input type="email" name="email" id="email" placeholder="Email" required />
+								  </div>
+								  <div class="col-12">
+									<input type="text" name="subject" id="subject" placeholder="Subject" required />
+								  </div>
+								  <div class="col-12">
+									<textarea name="message" id="message" placeholder="Message" rows="6" required></textarea>
+								  </div>
+								  <div class="col-12">
+									<ul class="actions">
+									  <li><input type="submit" class="primary" value="Send Message" /></li>
+									  <li><input type="reset" value="Reset Form" /></li>
+									</ul>
+								  </div>
 								</div>
-							</section>
-
+							  </form>
+							</div>
+						  </section>
+						  
 						<!-- Five -->
 						<!--
 							<section id="five">
