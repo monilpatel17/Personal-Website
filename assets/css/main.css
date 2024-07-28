@@ -2200,7 +2200,7 @@ input, select, textarea {
 
 		.image.main {
 			display: block;
-			height: 20em;
+			height: 10em;
 			border-radius: 0;
 		}
 
@@ -3314,3 +3314,112 @@ input, select, textarea {
 			}
 
 	}
+
+
+
+
+	/* skill section */
+	.language-list {
+		list-style-type: none; /* Removes default list styling */
+		padding: 0;            /* Removes default padding */
+		display: flex;         /* Aligns items in a row */
+		flex-wrap: wrap;       /* Allows wrapping to a new line if needed */
+		gap: 10px;             /* Space between items */
+	  }
+	  
+	  .language-item {
+		display: flex;         /* Aligns icon and text horizontally */
+		align-items: center;  /* Centers items vertically */
+		font-size: 38px;      /* Adjust font size as needed */
+	  }
+	  
+	  .language-item {
+		margin-right: 20px;    /* Space between icon and text */
+		/* color: yellow; */
+	  }
+	  
+
+
+
+	/* timeline css */
+
+	.timeline {
+		position: relative;
+	  }
+	
+	  .timeline::before {
+		content: '';
+		background: #C5CAE9;
+		width: 5px;
+		height: calc(100% - 200px); /* Adjusted to ensure it fits correctly */
+		position: absolute;
+		left: 50%;
+		top: 120px; /* To start from the dot */
+		transform: translateX(-50%);
+	  }
+	
+	.timeline-item {
+	  width: 100%;
+	  margin-bottom: 70px;
+	}
+	
+	.timeline-item:nth-child(even) .timeline-content {
+	  float: right;
+	  padding: 40px 30px 10px 30px;
+	}
+	
+	.timeline-item:nth-child(even) .timeline-content .date {
+	  right: auto;
+	  left: 0;
+	}
+	
+	.timeline-item:nth-child(even) .timeline-content::after {
+	  content: '';
+	  position: absolute;
+	  border-style: solid;
+	  width: 0;
+	  height: 0;
+	  top: 30px;
+	  left: -15px;
+	  border-width: 10px 15px 10px 0;
+	  border-color: transparent #f5f5f5 transparent transparent;
+	}
+	
+	.timeline-item::after {
+	  content: '';
+	  display: block;
+	  clear: both;
+	}
+	
+	.timeline-content {
+	  position: relative;
+	  width: 45%;
+	  padding: 10px 30px;
+	  border-radius: 4px;
+	  background: #f5f5f5;
+	  box-shadow: 0 20px 25px -15px rgba(0, 0, 0, .3);
+	}
+	
+	.timeline-content::after {
+	  content: '';
+	  position: absolute;
+	  border-style: solid;
+	  width: 0;
+	  height: 0;
+	  top: 30px;
+	  right: -15px;
+	  border-width: 10px 0 10px 15px;
+	  border-color: transparent transparent transparent #f5f5f5;
+	}
+	
+	.timeline-img {
+	  width: 30px;
+	  height: 30px;
+	  background: #555;
+	  border-radius: 50%;
+	  position: absolute;
+	  left: 50%;
+	  margin-top: 25px;
+	  margin-left: -15px;
+	}
+
