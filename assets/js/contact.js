@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         } catch (error) {
             console.error('Error:', error);
-            alert("There was an error sending your message. Please try again.");
+            console.log(error);
         }
     });
 });
